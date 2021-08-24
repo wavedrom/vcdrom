@@ -1,0 +1,37 @@
+{
+  "name": "vcdrom",
+  "version": "0.1.0",
+  "description": "Standalone VCD viewer PWA application",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint lib",
+    "build": "browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js",
+    "watch": "watchify ./lib/vcdrom.js -o app/vcdrom.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavedrom/vcdrom.git"
+  },
+  "author": "alex.drom@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wavedrom/vcdrom/issues"
+  },
+  "homepage": "https://github.com/wavedrom/vcdrom#readme",
+  "devDependencies": {
+    "@drom/eslint-config": "^0.10.0",
+    "browserify": "^17.0.0",
+    "codemirror": "^5.62.3",
+    "eslint": "^7.32.0",
+    "http-server": "^13.0.1",
+    "terser": "^5.7.2",
+    "vcd-stream": "^0.14.1",
+    "watchify": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node8",
+    "parserOptions": {
+      "ecmaVersion": 2020
+    }
+  }
+}

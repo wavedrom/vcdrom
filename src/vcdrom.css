@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Iosevka;
+  src: url('./iosevka-term-light.woff2') format('woff2')
+}
+
+body {
+  margin: 0px;
+  border: 0px;
+  background: #111;
+  color: #fff;
+  font-family: 'Iosevka';
+  /* font-size: 16px; */
+}
+
+.cursor {
+  stroke-dasharray: 4 3;
+  stroke: #fff7;
+  stroke-width: 1px;
+  z-index: 1;
+}
+
+.values text {
+  font-size: 14px;
+  text-anchor: middle;
+  fill: #fff;
+}
+
+text.xred {
+  fill: hsl(0, 100%, 50%);
+}
+text.zxviolet {
+  fill: hsl(287, 100%, 67%);
+}
+
+.sidebar {
+  height: auto;
+  z-index: 2;
+}
+
+.wd-container {
+  /* background-color: #1c1c1c; */
+  overflow: hidden;
+  cursor: col-resize;
+}
+.cm-s-blackboard.CodeMirror {
+  /* font-family: 'Roboto mono', monospace; */
+  font-family: 'Iosevka';
+  line-height: 1.5;
+  font-size: 16px;
+  height: auto;
+  width: 220px;
+  background: #0007;
+}
+
+.CodeMirror {
+  /* font-family: 'Roboto mono', monospace; */
+  font-family: 'Iosevka';
+  line-height: 2;
+  font-size: 16px;
+  height: auto;
+  width: 220px;
+  background: #0007;
+}
+
+.CodeMirror-line > span {
+  background: #000f;
+}
