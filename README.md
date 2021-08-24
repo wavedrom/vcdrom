@@ -1,3 +1,5 @@
+Standalone VCD viewer PWA application
+
 ## App page
 
 https://drom.io/vcd
