@@ -1,5 +1,3 @@
-# vcdrom
-
 ## App page
 
 https://drom.io/vcd
