@@ -19,20 +19,43 @@ body {
   z-index: 1;
 }
 
-.wd-cursor-line {
+line.wd-cursor-line {
   stroke-dasharray: 4 3;
   stroke: #fff7;
   stroke-width: 1px;
 }
 
 text.wd-cursor-time {
-  fill: hsl(68, 100%, 50%);
+  font-size: 20px;
+  fill: hsl(70, 100%, 50%);
   text-anchor: middle;
   z-index: 1;
 }
 
 rect.wd-cursor-time {
   fill: #222;
+}
+
+.wd-values {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.wd-values text {
+  font-size: 14px;
+  text-anchor: middle;
+  fill: #fff;
+}
+
+line.wd-grid-time {
+  stroke: #333;
+  stroke-width: 1px;
+}
+
+text.wd-grid-time {
+  text-anchor: middle;
+  fill: hsla(49, 100%, 50%, 0.7);
 }
 
 .wd-view {
@@ -42,18 +65,6 @@ rect.wd-cursor-time {
   bottom: 20px;
 }
 
-.wd-values {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-  bottom: 20px;
-}
-
-.wd-values text {
-  font-size: 14px;
-  text-anchor: middle;
-  fill: #fff;
-}
 
 text.xred {
   fill: hsl(0, 100%, 50%);

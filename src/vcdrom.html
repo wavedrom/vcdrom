@@ -12,6 +12,9 @@
     <script src="vcdrom.js"></script>
   </head>
   <body onload="VCDrom('waveform1')">
-    <div id="waveform1"></div>
+    <div id="waveform1">
+      <div class="wd-progress"><b>CTRL + O</b> : to open VCD file</div>
+      <input type="file" id="inputfile" accept=".vcd" style="display:none">
+    </div>
   </body>
 </html>
