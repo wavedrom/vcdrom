@@ -11,6 +11,10 @@ Using:
 
 https://drom.io/vcd
 
+## from NPM
+
+`npm i vcdrom`
+
 ## Examples
 
 https://github.com/wavedrom/vcd-samples
