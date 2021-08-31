@@ -8,6 +8,14 @@
     "build": "browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js",
     "watch": "watchify ./lib/vcdrom.js -o app/vcdrom.js -v"
   },
+  "files": [
+    "app/*.html",
+    "app/*.ico",
+    "app/*.woff2",
+    "app/*.wasm",
+    "app/*.css",
+    "app/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wavedrom/vcdrom.git"
