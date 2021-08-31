@@ -1,3 +1,5 @@
+[![NPM version](https://img.shields.io/npm/v/vcdrom.svg)](https://www.npmjs.org/package/vcdrom)
+
 Standalone VCD viewer PWA application
 
 Using:
