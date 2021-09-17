@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint lib",
+    "browserify": "browserify ./lib/vcdrom.js > app/vcdrom.js",
     "build": "browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js",
     "watch": "watchify ./lib/vcdrom.js -o app/vcdrom.js -v"
   },
