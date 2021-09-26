@@ -36,7 +36,7 @@
     "http-server": "^13.0.2",
     "onml": "^2.1.0",
     "terser": "^5.9.0",
-    "vcd-stream": "^0.15.2",
+    "vcd-stream": "^0.15.3",
     "watchify": "^4.0.0"
   },
   "eslintConfig": {
