@@ -37,7 +37,8 @@
     "onml": "^2.1.0",
     "terser": "^5.9.0",
     "vcd-stream": "^0.15.3",
-    "watchify": "^4.0.0"
+    "watchify": "^4.0.0",
+    "waveql": "^0.1.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
