@@ -81,12 +81,14 @@ li.CodeMirror-hint-active {
 
 body {
   overflow: hidden;
+  padding: 0px;
   margin: 0px;
   border: 0px;
   background: #111;
   color: #fff;
   font-family: 'Iosevka';
   /* font-size: 16px; */
+  height: 100%;
 }
 
 .wd-cursor {
@@ -197,6 +199,10 @@ text.zxviolet {
 
 .CodeMirror-scroll {
   z-index: 1;
+}
+
+html {
+  height: 100%;
 }
 
 /* .CodeMirror-line > span {
