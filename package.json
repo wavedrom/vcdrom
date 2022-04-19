@@ -29,14 +29,14 @@
   "homepage": "https://github.com/wavedrom/vcdrom#readme",
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
-    "@wavedrom/doppler": "^0.5.1",
+    "@wavedrom/doppler": "^0.6.0",
     "browserify": "^17.0.0",
     "codemirror": "^5.65.1",
-    "eslint": "^7.32.0",
+    "eslint": "^8.13.0",
     "http-server": "^14.1.0",
     "onml": "^2.1.0",
     "terser": "^5.10.0",
-    "vcd-stream": "^0.15.3",
+    "vcd-stream": "^1.1.0",
     "watchify": "^4.0.0",
     "waveql": "^0.4.1"
   },
