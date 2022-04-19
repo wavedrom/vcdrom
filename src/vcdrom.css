@@ -37,7 +37,7 @@ li.CodeMirror-hint-active {
   font-weight: bold;
 }
 
-.cm-s-waveql.CodeMirror { background: #0c10218e; color: #F8F8F8; }
+.cm-s-waveql.CodeMirror { background: #0000001c; color: #F8F8F8; }
 .cm-s-waveql div.CodeMirror-selected { background: #ffffff22; }
 .cm-s-waveql .CodeMirror-line::selection, .cm-s-waveql .CodeMirror-line > span::selection, .cm-s-waveql .CodeMirror-line > span > span::selection { background: rgba(37, 59, 118, .99); }
 .cm-s-waveql .CodeMirror-line::-moz-selection, .cm-s-waveql .CodeMirror-line > span::-moz-selection, .cm-s-waveql .CodeMirror-line > span > span::-moz-selection { background: rgba(37, 59, 118, .99); }
@@ -68,11 +68,11 @@ li.CodeMirror-hint-active {
 .cm-s-waveql .CodeMirror-activeline-background { background: #3C3636; }
 .cm-s-waveql .CodeMirror-matchingbracket { outline:1px solid grey;color:white !important; }
 
-.cm-signal { color: hsl(56, 100%, 68%); }
-.cm-path   { color: hsl(202, 100%, 66%); font-weight: bold; }
-.cm-format { color: hsl(150, 100%, 60%); font-weight: bold; }
-.cm-label  { color: hsl(175, 100%, 86%); font-weight: bold; }
-.cm-mark   { color: hsl(278, 100%, 79%); font-weight: bold; }
+.cm-signal { background: #000; color: hsl(56, 100%, 68%); }
+.cm-path   { background: #000; color: hsl(202, 100%, 66%); font-weight: bold; }
+.cm-format { background: #000; color: hsl(150, 100%, 60%); font-weight: bold; }
+.cm-label  { background: #000; color: hsl(175, 100%, 86%); font-weight: bold; }
+.cm-mark   { background: #000; color: hsl(278, 100%, 79%); font-weight: bold; }
 
 @font-face {
   font-family: Iosevka;
@@ -181,7 +181,7 @@ text.zxviolet {
   top: 20px;
   bottom: 20px;
   width: 320px;
-  background: #0007;
+  background: #0000002c;
 }
 
 .CodeMirror {
@@ -194,7 +194,7 @@ text.zxviolet {
   height: calc(100% - 40px);
   left: 0px;
   width: 320px;
-  background: #0007;
+  background: #0000002c;
 }
 
 .CodeMirror-scroll {
@@ -204,6 +204,28 @@ text.zxviolet {
 html {
   height: 100%;
 }
+
+text.pc-addr   { text-anchor: start; fill: hsl(202 100% 71%); }
+text.pc-opcode { text-anchor: start; fill: hsl(37 100% 50%); }
+text.pc-asm    { text-anchor: start; fill: hsl(0 0% 100%); }
+rect.pc-odd    { fill: #222; }
+rect.pc-even   { fill: #444; }
+
+rect.exa_pc    {  }
+
+rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5); rx: 8; ry: 8; }
+rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5); rx: 8; ry: 8; }
+rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5); rx: 8; ry: 8; }
+rect.s3_pc  { fill: hsla(135, 100%, 70%, 0.5); rx: 8; ry: 8; }
+rect.exa_pc { fill: hsla(180, 100%, 30%, 0.7); }
+rect.exb_pc { fill: hsla(180, 100%, 50%, 0.3); }
+rect.m1a_pc { fill: hsla(225, 100%, 30%, 0.7); }
+rect.m1b_pc { fill: hsla(225, 100%, 50%, 0.3); }
+rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7) }
+rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
+rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
+rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
+
 
 /* .CodeMirror-line > span {
   background: #000f;
