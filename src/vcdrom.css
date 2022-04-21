@@ -211,8 +211,6 @@ text.pc-asm    { text-anchor: start; fill: hsl(0 0% 100%); }
 rect.pc-odd    { fill: #222; }
 rect.pc-even   { fill: #444; }
 
-rect.exa_pc    {  }
-
 rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5); rx: 8; ry: 8; }
 rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5); rx: 8; ry: 8; }
 rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5); rx: 8; ry: 8; }
@@ -226,6 +224,7 @@ rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
 rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
 rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
 
+line.gap { stroke: #fff; stroke-dasharray: 4 3; }
 
 /* .CodeMirror-line > span {
   background: #000f;
