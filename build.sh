@@ -10,4 +10,4 @@ cp src/vcdrom.html app/index.html
 cp src/vcdrom.css app
 cp src/*.woff2 app
 
-browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js
+./node_modules/.bin/browserify ./lib/vcdrom.js | ./node_modules/.bin/terser --compress -o app/vcdrom.js
