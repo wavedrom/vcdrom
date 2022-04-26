@@ -205,9 +205,10 @@ html {
   height: 100%;
 }
 
-text.pc-addr   { text-anchor: start; fill: hsl(202 100% 71%); }
-text.pc-opcode { text-anchor: start; fill: hsl(37 100% 50%); }
-text.pc-asm    { text-anchor: start; fill: hsl(0 0% 100%); }
+text.pc         { text-anchor: start; }
+tspan.pc-addr   { fill: hsl(202 100% 71%); }
+tspan.pc-opcode { fill: hsl(37 100% 50%); }
+tspan.pc-asm    { fill: hsl(0 0% 100%); }
 rect.pc-odd    { fill: #222; }
 rect.pc-even   { fill: #444; }
 
