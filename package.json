@@ -1,6 +1,6 @@
 {
   "name": "vcdrom",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Standalone VCD viewer PWA application",
   "main": "index.js",
   "scripts": {
@@ -36,12 +36,15 @@
     "http-server": "^14.1.0",
     "onml": "^2.1.0",
     "terser": "^5.10.0",
-    "vcd-stream": "^1.1.0",
+    "vcd-stream": "^1.2.0",
     "watchify": "^4.0.0",
     "waveql": "^0.4.1"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
+    "env": {
+      "es2020": true
+    },
     "parserOptions": {
       "ecmaVersion": 2020
     }
