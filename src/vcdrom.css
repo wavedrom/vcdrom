@@ -225,6 +225,11 @@ rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
 rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
 rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
 
+.event0 { fill: hsla(0, 0%, 100%, 0.3); }
+.event1 { fill: hsl(101, 100%, 50%); }
+.event2 { fill: hsl(57, 100%, 50%); }
+.event3 { fill: hsl(32, 100%, 50%); }
+
 line.gap { stroke: #fff; stroke-dasharray: 4 3; }
 
 /* .CodeMirror-line > span {
