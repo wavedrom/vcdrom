@@ -33,21 +33,25 @@
     "browserify": "^17.0.0",
     "codemirror": "^5.65.1",
     "eslint": "^8.13.0",
+    "event-debug": "^2.1.0",
     "http-server": "^14.1.0",
     "onml": "^2.1.0",
+    "pubnub": "^4.24.4",
     "terser": "^5.10.0",
     "vcd-stream": "^1.1.0",
     "watchify": "^4.0.0",
     "waveql": "^0.4.1",
     "websocket": "^1.0.29",
-    "ws": "8.6.0",
-    "event-debug": "^2.1.0",
-    "pubnub": "^4.24.4"
+    "ws": "8.6.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
     "parserOptions": {
       "ecmaVersion": 2020
     }
+  },
+  "dependencies": {
+    "pck": "^0.0.1",
+    "pkg": "^5.7.0"
   }
 }
