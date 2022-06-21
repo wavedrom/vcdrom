@@ -41,7 +41,8 @@
     "watchify": "^4.0.0",
     "waveql": "^0.4.1",
     "websocket": "^1.0.29",
-    "ws": "8.6.0"
+    "ws": "8.6.0",
+    "lodash.get": "^4.4.2"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
