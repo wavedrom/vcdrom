@@ -232,3 +232,69 @@ line.gap { stroke: #fff; stroke-dasharray: 4 3; }
 } */
 
 /* Port of TextMate's waveql theme */
+
+
+/*help button css properties */
+
+#helpButton{
+position:absolute;
+bottom:1%;
+left:90%;
+opacity: 0.9;
+color: rgb(229,229,229);
+transition: opacity 0.5s linear;
+text-align:center;
+border-radius:48px;
+border:2px rgb(262,63,78);
+ height: 22px;
+ width: 150px;
+  background-color:rgb(262,63,78)
+}
+
+
+#welcomeDiv{
+position:absolute;
+bottom:3%;
+left:78%;
+opacity: 0;
+border-radius: 48px;
+transition: opacity 0.5s linear;
+}
+
+#welcomeDiv.show {
+  opacity: 0.5;
+}
+
+#welcomeDiv.hide {
+  opacity: 0;
+}
+
+.form
+{
+  width:400px;margin:auto;
+  position:absolute;bottom:50%;left:75%;
+  }
+.shortcut-helper-menu
+{position:absolute;bottom:100%;left:0;padding:1rem;
+  background:rgb(66, 66, 66);
+  color: rgb(229,229,229);
+  margin-bottom:1rem;
+  border-radius:48px}
+
+/* arrow above the button */
+.shortcut-helper-menu:after
+{content:"";display:block;width:0;border-style:solid;border-width:10px 10px 0;
+  border-color:rgb(229,229,229) transparent transparent;position:absolute;
+  top: 100%;left:70%;
+transition-timing-function: ease-in-out ;}
+/* .shortcut-helper-menu.hidden{display:none} */
+.shortcut-helper-menu.shown{transition: all 0.3s;;display:block;transition-timing-function: ease-in-out ;
+
+}
+
+/* .header{font-weight:600;margin-bottom:1rem} */
+.shortcut{
+  display:flex;align-items:center;margin-bottom:1rem;white-space:nowrap}
+.label{margin-right:1rem;width:8rem}
+.key{display:inline-block;background:rgb(262,63,78);line-height:1.6rem;padding:0 .5rem;border-radius:4px}
+.key.pressed{background:#00c7b2}
