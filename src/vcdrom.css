@@ -262,7 +262,7 @@ transition: opacity 0.5s linear;
 }
 
 #welcomeDiv.show {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 #welcomeDiv.hide {
