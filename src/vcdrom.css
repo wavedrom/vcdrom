@@ -114,6 +114,52 @@ rect.wd-cursor-time {
   fill: #222;
 }
 
+.wd-markab {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+line.wd-markab-line {
+  stroke-dasharray: 4 3;
+  stroke: rgba(74, 216, 55, 0.467);
+  stroke-width: 3px;
+}
+
+text.wd-markab-time {
+  font-size: 20px;
+  fill: hsl(70, 100%, 50%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-markab-time {
+  fill: #222;
+}
+
+.wd-markcd {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+line.wd-markcd-line {
+  stroke-dasharray: 4 3;
+  stroke: rgba(139, 17, 150, 0.467);
+  stroke-width: 3px;
+}
+
+text.wd-markcd-time {
+  font-size: 20px;
+  fill: hsl(70, 100%, 50%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-markcd-time {
+  fill: #222;
+}
+
 .wd-values {
   position: absolute;
   left: 0px;
