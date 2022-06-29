@@ -341,6 +341,6 @@ transition-timing-function: ease-in-out ;}
 /* .header{font-weight:600;margin-bottom:1rem} */
 .shortcut{
   display:flex;align-items:center;margin-bottom:1rem;white-space:nowrap}
-.label{margin-right:1rem;width:8rem}
+.label{margin-right:1rem;width:8rem; padding-right: 60px;}
 .key{display:inline-block;background:rgb(262,63,78);line-height:1.6rem;padding:0 .5rem;border-radius:4px}
 .key.pressed{background:#00c7b2}
