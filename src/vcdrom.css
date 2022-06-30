@@ -111,7 +111,7 @@ text.wd-cursor-time {
 }
 
 rect.wd-cursor-time {
-  fill: #222;
+  fill: #222; rx: 8; ry: 8;
 }
 
 .wd-markab {
@@ -128,13 +128,14 @@ line.wd-markab-line {
 
 text.wd-markab-time {
   font-size: 20px;
-  fill: hsl(70, 100%, 50%);
+  fill: hsl(0, 0%, 6%);
   text-anchor: middle;
   z-index: 1;
 }
 
 rect.wd-markab-time {
-  fill: #222;
+  fill: rgb(39, 158, 2); rx: 8;
+    ry: 8;
 }
 
 .wd-markcd {
@@ -151,13 +152,14 @@ line.wd-markcd-line {
 
 text.wd-markcd-time {
   font-size: 20px;
-  fill: hsl(70, 100%, 50%);
+  fill: hsl(0, 0%, 6%);
   text-anchor: middle;
   z-index: 1;
 }
 
 rect.wd-markcd-time {
-  fill: #222;
+  fill: rgb(103, 3, 170); rx: 8;
+    ry: 8;
 }
 
 .wd-values {
