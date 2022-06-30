@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 mkdir -p app
 
@@ -10,7 +10,7 @@ cp src/vcdrom.html app/index.html
 cp -r src/favicon app
 cp src/vcdrom.css app
 cp src/*.woff2 app
-cp src/Freedom.svg app/Freedom.svg
+cp src/PipelineViewer.svg app/PipelineViewer.svg
 
 
 ./node_modules/.bin/browserify ./lib/vcdrom.js | ./node_modules/.bin/terser --compress -o app/vcdrom.js
