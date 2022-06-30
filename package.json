@@ -32,8 +32,11 @@
     "browserify": "^17.0.0",
     "codemirror": "^5.65.1",
     "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "event-debug": "^2.1.0",
     "http-server": "^14.1.0",
+    "lodash.get": "^4.4.2",
     "onml": "^2.1.0",
     "pubnub": "^4.24.4",
     "terser": "^5.10.0",
@@ -41,8 +44,7 @@
     "watchify": "^4.0.0",
     "waveql": "^0.4.1",
     "websocket": "^1.0.29",
-    "ws": "8.6.0",
-    "lodash.get": "^4.4.2"
+    "ws": "8.6.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
