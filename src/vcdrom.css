@@ -1,4 +1,3 @@
-
 .CodeMirror-hints {
   position: absolute;
   z-index: 10;
@@ -8,9 +7,9 @@
   margin: 0;
   padding: 2px;
 
-  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
-  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
-  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   border: 1px solid rgb(21, 150, 150);
 
@@ -37,46 +36,129 @@ li.CodeMirror-hint-active {
   font-weight: bold;
 }
 
-.cm-s-waveql.CodeMirror { background: #0000001c; color: #F8F8F8; }
-.cm-s-waveql div.CodeMirror-selected { background: #ffffff22; }
-.cm-s-waveql .CodeMirror-line::selection, .cm-s-waveql .CodeMirror-line > span::selection, .cm-s-waveql .CodeMirror-line > span > span::selection { background: rgba(37, 59, 118, .99); }
-.cm-s-waveql .CodeMirror-line::-moz-selection, .cm-s-waveql .CodeMirror-line > span::-moz-selection, .cm-s-waveql .CodeMirror-line > span > span::-moz-selection { background: rgba(37, 59, 118, .99); }
-.cm-s-waveql .CodeMirror-gutters { background: #0C1021; border-right: 0; }
-.cm-s-waveql .CodeMirror-guttermarker { color: #FBDE2D; }
-.cm-s-waveql .CodeMirror-guttermarker-subtle { color: #888; }
-.cm-s-waveql .CodeMirror-linenumber { color: #888; }
-.cm-s-waveql .CodeMirror-cursor { border-left: 1px solid #A7A7A7; }
+.cm-s-waveql.CodeMirror {
+  background: #0000001c;
+  color: #f8f8f8;
+}
+.cm-s-waveql div.CodeMirror-selected {
+  background: #ffffff22;
+}
+.cm-s-waveql .CodeMirror-line::selection,
+.cm-s-waveql .CodeMirror-line > span::selection,
+.cm-s-waveql .CodeMirror-line > span > span::selection {
+  background: rgba(37, 59, 118, 0.99);
+}
+.cm-s-waveql .CodeMirror-line::-moz-selection,
+.cm-s-waveql .CodeMirror-line > span::-moz-selection,
+.cm-s-waveql .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(37, 59, 118, 0.99);
+}
+.cm-s-waveql .CodeMirror-gutters {
+  background: #0c1021;
+  border-right: 0;
+}
+.cm-s-waveql .CodeMirror-guttermarker {
+  color: #fbde2d;
+}
+.cm-s-waveql .CodeMirror-guttermarker-subtle {
+  color: #888;
+}
+.cm-s-waveql .CodeMirror-linenumber {
+  color: #888;
+}
+.cm-s-waveql .CodeMirror-cursor {
+  border-left: 1px solid #a7a7a7;
+}
 
-.cm-s-waveql .cm-keyword { color: #FBDE2D; }
-.cm-s-waveql .cm-atom { color: #D8FA3C; }
-.cm-s-waveql .cm-number { color: #D8FA3C; }
-.cm-s-waveql .cm-def { color: #8DA6CE; }
-.cm-s-waveql .cm-variable { color: #FF6400; }
-.cm-s-waveql .cm-operator { color: #FBDE2D; }
-.cm-s-waveql .cm-comment { color: #AEAEAE; }
-.cm-s-waveql .cm-string { color: #61CE3C; }
-.cm-s-waveql .cm-string-2 { color: #61CE3C; }
-.cm-s-waveql .cm-meta { color: #D8FA3C; }
-.cm-s-waveql .cm-builtin { color: #8DA6CE; }
-.cm-s-waveql .cm-tag { color: #8DA6CE; }
-.cm-s-waveql .cm-attribute { color: #8DA6CE; }
-.cm-s-waveql .cm-header { color: #FF6400; }
-.cm-s-waveql .cm-hr { color: #AEAEAE; }
-.cm-s-waveql .cm-link { color: #8DA6CE; }
-.cm-s-waveql .cm-error { background: #880900; color: #F8F8F8; }
+.cm-s-waveql .cm-keyword {
+  color: #fbde2d;
+}
+.cm-s-waveql .cm-atom {
+  color: #d8fa3c;
+}
+.cm-s-waveql .cm-number {
+  color: #d8fa3c;
+}
+.cm-s-waveql .cm-def {
+  color: #8da6ce;
+}
+.cm-s-waveql .cm-variable {
+  color: #ff6400;
+}
+.cm-s-waveql .cm-operator {
+  color: #fbde2d;
+}
+.cm-s-waveql .cm-comment {
+  color: #aeaeae;
+}
+.cm-s-waveql .cm-string {
+  color: #61ce3c;
+}
+.cm-s-waveql .cm-string-2 {
+  color: #61ce3c;
+}
+.cm-s-waveql .cm-meta {
+  color: #d8fa3c;
+}
+.cm-s-waveql .cm-builtin {
+  color: #8da6ce;
+}
+.cm-s-waveql .cm-tag {
+  color: #8da6ce;
+}
+.cm-s-waveql .cm-attribute {
+  color: #8da6ce;
+}
+.cm-s-waveql .cm-header {
+  color: #ff6400;
+}
+.cm-s-waveql .cm-hr {
+  color: #aeaeae;
+}
+.cm-s-waveql .cm-link {
+  color: #8da6ce;
+}
+.cm-s-waveql .cm-error {
+  background: #880900;
+  color: #f8f8f8;
+}
 
-.cm-s-waveql .CodeMirror-activeline-background { background: #3C3636; }
-.cm-s-waveql .CodeMirror-matchingbracket { outline:1px solid grey;color:white !important; }
+.cm-s-waveql .CodeMirror-activeline-background {
+  background: #3c3636;
+}
+.cm-s-waveql .CodeMirror-matchingbracket {
+  outline: 1px solid grey;
+  color: white !important;
+}
 
-.cm-signal { background: #000; color: hsl(56, 100%, 68%); }
-.cm-path   { background: #000; color: hsl(202, 100%, 66%); font-weight: bold; }
-.cm-format { background: #000; color: hsl(150, 100%, 60%); font-weight: bold; }
-.cm-label  { background: #000; color: hsl(175, 100%, 86%); font-weight: bold; }
-.cm-mark   { background: #000; color: hsl(278, 100%, 79%); font-weight: bold; }
+.cm-signal {
+  background: #000;
+  color: hsl(56, 100%, 68%);
+}
+.cm-path {
+  background: #000;
+  color: hsl(202, 100%, 66%);
+  font-weight: bold;
+}
+.cm-format {
+  background: #000;
+  color: hsl(150, 100%, 60%);
+  font-weight: bold;
+}
+.cm-label {
+  background: #000;
+  color: hsl(175, 100%, 86%);
+  font-weight: bold;
+}
+.cm-mark {
+  background: #000;
+  color: hsl(278, 100%, 79%);
+  font-weight: bold;
+}
 
 @font-face {
   font-family: Iosevka;
-  src: url('./iosevka-term-light.woff2') format('woff2')
+  src: url('./iosevka-term-light.woff2') format('woff2');
 }
 
 body {
@@ -111,7 +193,9 @@ text.wd-cursor-time {
 }
 
 rect.wd-cursor-time {
-  fill: #222; rx: 8; ry: 8;
+  fill: #222;
+  rx: 8;
+  ry: 8;
 }
 
 .wd-markab {
@@ -134,8 +218,9 @@ text.wd-markab-time {
 }
 
 rect.wd-markab-time {
-  fill: rgb(39, 158, 2); rx: 8;
-    ry: 8;
+  fill: rgb(39, 158, 2);
+  rx: 8;
+  ry: 8;
 }
 
 .wd-markcd {
@@ -158,8 +243,9 @@ text.wd-markcd-time {
 }
 
 rect.wd-markcd-time {
-  fill: rgb(103, 3, 170); rx: 8;
-    ry: 8;
+  fill: rgb(103, 3, 170);
+  rx: 8;
+  ry: 8;
 }
 
 .wd-values {
@@ -190,7 +276,6 @@ text.wd-grid-time {
   top: 20px;
   bottom: 20px;
 }
-
 
 text.xred {
   fill: hsl(0, 100%, 50%);
@@ -253,27 +338,74 @@ html {
   height: 100%;
 }
 
-text.pc         { text-anchor: start; }
-tspan.pc-addr   { fill: hsl(202 100% 71%); }
-tspan.pc-opcode { fill: hsl(37 100% 50%); }
-tspan.pc-asm    { fill: hsl(0 0% 100%); }
-rect.pc-odd    { fill: #222; }
-rect.pc-even   { fill: #444; }
+text.pc {
+  text-anchor: start;
+}
+tspan.pc-addr {
+  fill: hsl(202 100% 71%);
+}
+tspan.pc-opcode {
+  fill: hsl(37 100% 50%);
+}
+tspan.pc-asm {
+  fill: hsl(0 0% 100%);
+}
+rect.pc-odd {
+  fill: #222;
+}
+rect.pc-even {
+  fill: #444;
+}
 
-rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s3_pc  { fill: hsla(135, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.exa_pc { fill: hsla(180, 100%, 30%, 0.7); }
-rect.exb_pc { fill: hsla(180, 100%, 50%, 0.3); }
-rect.m1a_pc { fill: hsla(225, 100%, 30%, 0.7); }
-rect.m1b_pc { fill: hsla(225, 100%, 50%, 0.3); }
-rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7) }
-rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
-rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
-rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
+rect.s0_pc {
+  fill: hsla(0, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s1_pc {
+  fill: hsla(45, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s2_pc {
+  fill: hsla(90, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s3_pc {
+  fill: hsla(135, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.exa_pc {
+  fill: hsla(180, 100%, 30%, 0.7);
+}
+rect.exb_pc {
+  fill: hsla(180, 100%, 50%, 0.3);
+}
+rect.m1a_pc {
+  fill: hsla(225, 100%, 30%, 0.7);
+}
+rect.m1b_pc {
+  fill: hsla(225, 100%, 50%, 0.3);
+}
+rect.m2a_pc {
+  fill: hsla(270, 100%, 30%, 0.7);
+}
+rect.m2b_pc {
+  fill: hsla(270, 100%, 50%, 0.3);
+}
+rect.wba_pc {
+  fill: hsla(315, 100%, 30%, 0.7);
+}
+rect.wbb_pc {
+  fill: hsla(315, 100%, 50%, 0.3);
+}
 
-line.gap { stroke: #fff; stroke-dasharray: 4 3; }
+line.gap {
+  stroke: #fff;
+  stroke-dasharray: 4 3;
+}
 
 /* .CodeMirror-line > span {
   background: #000f;
@@ -281,105 +413,70 @@ line.gap { stroke: #fff; stroke-dasharray: 4 3; }
 
 /* Port of TextMate's waveql theme */
 
-
 /*help button css properties */
 
-#helpButton{
-position:absolute;
-bottom:1%;
-right: 50px;
-opacity: 0.9;
-color: rgb(229,229,229);
-transition: opacity 0.5s linear;
-text-align:center;
-border-radius:48px;
-border:2px rgb(262,63,78);
- height: 22px;
- width: 150px;
-  background-color:rgb(262,63,78)
+#header {
+  height: 24px;
+  width: 200px;
 }
 
-
-#welcomeDiv{
-position:sticky;
-right: 10px;
-bottom: 20px;
-opacity: 0;
-border-radius: 48px;
-transition: opacity 0.5s linear;
-}
-
-#welcomeDiv.show {
+#helpButton {
+  width: 200px;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px; /* to ensure the text is centered*/
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: rgb(262, 63, 78);
   opacity: 0.9;
+  text-align: center;
+  color: rgb(229, 229, 229);
+  border-radius: 48px;
+  border: 2px rgb(262, 63, 78);
 }
 
-#welcomeDiv.hide {
+#openDiv {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
   opacity: 0;
-}
-
-.form {
-  width: 400px;
-  margin: auto;
-  position: absolute;
-  bottom: 0px;
-  right: 150px;
-}
-
-.shortcut-helper-menu {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
+  width: 380px;
+  border-radius: 48px;
+  transition: opacity 0.7s linear;
   padding: 1rem;
   background: rgb(66, 66, 66);
   color: rgb(229, 229, 229);
   margin-bottom: 1rem;
-  border-radius: 48px
+  border-radius: 48px;
 }
 
-/* arrow above the button */
-.shortcut-helper-menu:after {
-  content: "";
-  display: block;
-  width: 0;
-  border-style: solid;
-  border-width: 10px 10px 0;
-  border-color: rgb(229, 229, 229) transparent transparent;
-  position: absolute;
-  top: 100%;
-  left: 70%;
-  transition-timing-function: ease-in-out;
+#openDiv.show {
+  opacity: 0.8;
 }
 
-/* .shortcut-helper-menu.hidden{display:none} */
-.shortcut-helper-menu.shown {
-  transition: all 0.3s;
-  ;
-  display: block;
-  transition-timing-function: ease-in-out;
+#openDiv.hide {
+  opacity: 0;
 }
 
-/* .header{font-weight:600;margin-bottom:1rem} */
-.shortcut {
+.each_shortcut {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
-.label {
+.side_text {
   margin-right: 1rem;
   width: 8rem;
   padding-right: 60px;
 }
-
 .key {
   display: inline-block;
   background: rgb(262, 63, 78);
+  padding-left: 10px;
   line-height: 1.6rem;
-  padding: 0 .5rem;
-  border-radius: 4px
-}
-
-.key.pressed {
-  background: #00c7b2
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
 }

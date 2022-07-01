@@ -1,0 +1,65 @@
+#header {
+  height: 24px;
+  width: 200px;
+}
+
+#helpButton {
+  width: 200px;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px; /* to ensure the text is centered*/
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: rgb(262, 63, 78);
+  opacity: 0.9;
+  text-align: center;
+  color: rgb(229, 229, 229);
+  border-radius: 48px;
+  border: 2px rgb(262, 63, 78);
+}
+
+#openDiv {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  opacity: 0;
+  width: 380px;
+  border-radius: 48px;
+  transition: opacity 0.7s linear;
+  padding: 1rem;
+  background: rgb(66, 66, 66);
+  color: rgb(229, 229, 229);
+  margin-bottom: 1rem;
+  border-radius: 48px;
+}
+
+#openDiv.show {
+  opacity: 0.8;
+}
+
+#openDiv.hide {
+  opacity: 0;
+}
+
+.each_shortcut {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.side_text {
+  margin-right: 1rem;
+  width: 8rem;
+  padding-right: 60px;
+}
+.key {
+  display: inline-block;
+  background: rgb(262, 63, 78);
+  padding-left: 10px;
+  line-height: 1.6rem;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
