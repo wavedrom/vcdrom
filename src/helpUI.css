@@ -24,7 +24,7 @@
   bottom: 30px;
   right: 15px;
   opacity: 0;
-  width: 380px;
+  width: 400px;
   border-radius: 48px;
   transition: opacity 0.7s linear;
   padding: 1rem;
@@ -52,7 +52,7 @@
 .side_text {
   margin-right: 1rem;
   width: 8rem;
-  padding-right: 60px;
+  padding-right: 55px;
 }
 .key {
   display: inline-block;
