@@ -158,7 +158,7 @@ li.CodeMirror-hint-active {
 
 @font-face {
   font-family: Iosevka;
-  src: url('./iosevka-term-light.woff2') format('woff2');
+  src: url("./iosevka-term-light.woff2") format("woff2");
 }
 
 body {
@@ -168,7 +168,7 @@ body {
   border: 0px;
   background: #111;
   color: #fff;
-  font-family: 'Iosevka';
+  font-family: "Iosevka";
   /* font-size: 16px; */
   height: 100%;
 }
@@ -197,7 +197,33 @@ rect.wd-cursor-time {
   rx: 8;
   ry: 8;
 }
+/* bookmarks */
+.wd-bookmark {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
 
+line.wd-bookmark-line {
+  stroke-dasharray: 4 3;
+  stroke: rgb(0, 102, 204);
+  stroke-width: 3px;
+}
+
+text.wd-bookmark-time {
+  font-size: 20px;
+  fill: hsl(0, 0%, 6%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-bookmark-time {
+  fill: rgb(0, 102, 204);
+  rx: 8;
+  ry: 8;
+}
+
+/* ---- */
 .wd-markab {
   position: absolute;
   top: 0px;
@@ -308,7 +334,7 @@ text.zxviolet {
 .cm-s-waveql.CodeMirror {
   /* font-family: 'Roboto mono', monospace; */
   /* padding: 20 0 20 0; */
-  font-family: 'Iosevka';
+  font-family: "Iosevka";
   line-height: 1.5;
   font-size: 16px;
   top: 20px;
@@ -319,7 +345,7 @@ text.zxviolet {
 
 .CodeMirror {
   /* font-family: 'Roboto mono', monospace; */
-  font-family: 'Iosevka';
+  font-family: "Iosevka";
   line-height: 2;
   font-size: 16px;
   top: 20px;
