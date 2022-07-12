@@ -9,7 +9,7 @@
   vertical-align: middle;
   line-height: 30px; /* to ensure the text is centered*/
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   right: 15px;
   background-color: rgb(262, 63, 78);
   opacity: 0.9;
@@ -62,4 +62,16 @@
   padding: 0 0.5rem;
   border-radius: 4px;
   font-weight: bold;
+}
+
+/* sifive logo */
+.sifive-logo {
+  opacity: 0.6;
+}
+#loadingText {
+  opacity: 0.6;
+}
+
+.wd-progress {
+  display: inline-block;
 }
