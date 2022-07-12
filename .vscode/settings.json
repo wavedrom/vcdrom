@@ -1,3 +1,7 @@
 {
-  "cSpell.words": ["Sifive"]
+  "cSpell.words": [
+    "Sifive"
+  ],
+  "prettier.enable": true,
+  "editor.formatOnSave": true
 }
