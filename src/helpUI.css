@@ -63,3 +63,15 @@
   border-radius: 4px;
   font-weight: bold;
 }
+
+/* sifive logo */
+.sifive-logo {
+  opacity: 0.6;
+}
+#loadingText {
+  opacity: 0.6;
+}
+
+.wd-progress {
+  display: inline-block;
+}
