@@ -1,0 +1,77 @@
+/* bookmarks */
+.wd-bookmark {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+line.wd-bookmark-line {
+  stroke-dasharray: 4 3;
+  stroke: rgb(0, 102, 204);
+  stroke-width: 3px;
+}
+
+text.wd-bookmark-time {
+  font-size: 20px;
+  fill: hsl(0, 0%, 6%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-bookmark-time {
+  fill: rgb(0, 102, 204);
+  rx: 8;
+  ry: 8;
+}
+
+/* ---- */
+.wd-markab {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+line.wd-markab-line {
+  stroke-dasharray: 4 3;
+  stroke: rgba(74, 216, 55, 0.467);
+  stroke-width: 3px;
+}
+
+text.wd-markab-time {
+  font-size: 20px;
+  fill: hsl(0, 0%, 6%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-markab-time {
+  fill: rgb(133, 187, 101);
+  /* fill: rgb(39, 158, 2); */
+  rx: 8;
+  ry: 8;
+}
+
+.wd-markcd {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+line.wd-markcd-line {
+  stroke-dasharray: 4 3;
+  stroke: rgba(139, 17, 150, 0.467);
+  stroke-width: 3px;
+}
+
+text.wd-markcd-time {
+  font-size: 20px;
+  fill: hsl(0, 0%, 6%);
+  text-anchor: middle;
+  z-index: 1;
+}
+
+rect.wd-markcd-time {
+  fill: rgb(103, 3, 170);
+  rx: 8;
+  ry: 8;
+}

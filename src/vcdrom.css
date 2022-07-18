@@ -158,7 +158,7 @@ li.CodeMirror-hint-active {
 
 @font-face {
   font-family: Iosevka;
-  src: url("./iosevka-term-light.woff2") format("woff2");
+  src: url('./iosevka-term-light.woff2') format('woff2');
 }
 
 body {
@@ -168,7 +168,7 @@ body {
   border: 0px;
   background: #111;
   color: #fff;
-  font-family: "Iosevka";
+  font-family: 'Iosevka';
   /* font-size: 16px; */
   height: 100%;
 }
@@ -194,82 +194,6 @@ text.wd-cursor-time {
 
 rect.wd-cursor-time {
   fill: #222;
-  rx: 8;
-  ry: 8;
-}
-/* bookmarks */
-.wd-bookmark {
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-}
-
-line.wd-bookmark-line {
-  stroke-dasharray: 4 3;
-  stroke: rgb(0, 102, 204);
-  stroke-width: 3px;
-}
-
-text.wd-bookmark-time {
-  font-size: 20px;
-  fill: hsl(0, 0%, 6%);
-  text-anchor: middle;
-  z-index: 1;
-}
-
-rect.wd-bookmark-time {
-  fill: rgb(0, 102, 204);
-  rx: 8;
-  ry: 8;
-}
-
-/* ---- */
-.wd-markab {
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-}
-
-line.wd-markab-line {
-  stroke-dasharray: 4 3;
-  stroke: rgba(74, 216, 55, 0.467);
-  stroke-width: 3px;
-}
-
-text.wd-markab-time {
-  font-size: 20px;
-  fill: hsl(0, 0%, 6%);
-  text-anchor: middle;
-  z-index: 1;
-}
-
-rect.wd-markab-time {
-  fill: rgb(39, 158, 2);
-  rx: 8;
-  ry: 8;
-}
-
-.wd-markcd {
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-}
-
-line.wd-markcd-line {
-  stroke-dasharray: 4 3;
-  stroke: rgba(139, 17, 150, 0.467);
-  stroke-width: 3px;
-}
-
-text.wd-markcd-time {
-  font-size: 20px;
-  fill: hsl(0, 0%, 6%);
-  text-anchor: middle;
-  z-index: 1;
-}
-
-rect.wd-markcd-time {
-  fill: rgb(103, 3, 170);
   rx: 8;
   ry: 8;
 }
@@ -334,7 +258,7 @@ text.zxviolet {
 .cm-s-waveql.CodeMirror {
   /* font-family: 'Roboto mono', monospace; */
   /* padding: 20 0 20 0; */
-  font-family: "Iosevka";
+  font-family: 'Iosevka';
   line-height: 1.5;
   font-size: 16px;
   top: 20px;
@@ -345,7 +269,7 @@ text.zxviolet {
 
 .CodeMirror {
   /* font-family: 'Roboto mono', monospace; */
-  font-family: "Iosevka";
+  font-family: 'Iosevka';
   line-height: 2;
   font-size: 16px;
   top: 20px;
@@ -364,32 +288,87 @@ html {
   height: 100%;
 }
 
-text.pc         { text-anchor: start; }
-tspan.pc-addr   { fill: hsl(202 100% 71%); }
-tspan.pc-opcode { fill: hsl(37 100% 50%); }
-tspan.pc-asm    { fill: hsl(0 0% 100%); }
-rect.pc-odd    { fill: #222; }
-rect.pc-even   { fill: #444; }
+text.pc {
+  text-anchor: start;
+}
+tspan.pc-addr {
+  fill: hsl(202 100% 71%);
+}
+tspan.pc-opcode {
+  fill: hsl(37 100% 50%);
+}
+tspan.pc-asm {
+  fill: hsl(0 0% 100%);
+}
+rect.pc-odd {
+  fill: #222;
+}
+rect.pc-even {
+  fill: #444;
+}
 
-rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s3_pc  { fill: hsla(135, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.exa_pc { fill: hsla(180, 100%, 30%, 0.7); }
-rect.exb_pc { fill: hsla(180, 100%, 50%, 0.3); }
-rect.m1a_pc { fill: hsla(225, 100%, 30%, 0.7); }
-rect.m1b_pc { fill: hsla(225, 100%, 50%, 0.3); }
-rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7) }
-rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
-rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
-rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
+rect.s0_pc {
+  fill: hsla(0, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s1_pc {
+  fill: hsla(45, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s2_pc {
+  fill: hsla(90, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.s3_pc {
+  fill: hsla(135, 100%, 70%, 0.5);
+  rx: 8;
+  ry: 8;
+}
+rect.exa_pc {
+  fill: hsla(180, 100%, 30%, 0.7);
+}
+rect.exb_pc {
+  fill: hsla(180, 100%, 50%, 0.3);
+}
+rect.m1a_pc {
+  fill: hsla(225, 100%, 30%, 0.7);
+}
+rect.m1b_pc {
+  fill: hsla(225, 100%, 50%, 0.3);
+}
+rect.m2a_pc {
+  fill: hsla(270, 100%, 30%, 0.7);
+}
+rect.m2b_pc {
+  fill: hsla(270, 100%, 50%, 0.3);
+}
+rect.wba_pc {
+  fill: hsla(315, 100%, 30%, 0.7);
+}
+rect.wbb_pc {
+  fill: hsla(315, 100%, 50%, 0.3);
+}
 
-.event0 { fill: hsla(0, 0%, 100%, 0.3); }
-.event1 { fill: hsl(101, 100%, 50%); }
-.event2 { fill: hsl(57, 100%, 50%); }
-.event3 { fill: hsl(32, 100%, 50%); }
+.event0 {
+  fill: hsla(0, 0%, 100%, 0.3);
+}
+.event1 {
+  fill: hsl(101, 100%, 50%);
+}
+.event2 {
+  fill: hsl(57, 100%, 50%);
+}
+.event3 {
+  fill: hsl(32, 100%, 50%);
+}
 
-line.gap { stroke: #fff; stroke-dasharray: 4 3; }
+line.gap {
+  stroke: #fff;
+  stroke-dasharray: 4 3;
+}
 
 /* .CodeMirror-line > span {
   background: #000f;
