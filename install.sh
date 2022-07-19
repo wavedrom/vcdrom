@@ -32,6 +32,8 @@ then
     echo "You must set FS_WS to be the workspace root of your FS session"
     echo "Use either:"
     echo "  $ export FS_WS=<path-to-workspace>"
+    echo "  $ ./install.sh"
+    echo "or:"
     echo "  $ FS_WS=<path-to-workspace> ./install.sh"
     exit 1
 fi
