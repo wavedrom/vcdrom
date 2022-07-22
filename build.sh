@@ -10,7 +10,8 @@ cp src/vcdrom.html app/index.html
 cp -r src/favicon app
 cp src/vcdrom.css app
 cp src/*.woff2 app
-cp src/PipelineViewer.svg app/PipelineViewer.svg
 cp src/helpUI.css app 
+cp src/statusBars.css app 
+cp src/bookMarks.css app 
 
 ./node_modules/.bin/browserify ./lib/vcdrom.js | ./node_modules/.bin/terser --compress -o app/vcdrom.js
