@@ -47,9 +47,8 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 0;
-  opacity: 0;
-  transition: width 2s ease 0.9s;
+  /* transition-timing-function: linear;
+  transition: ease 0.1s; */
   padding: 0 8px;
 }
 .progress-bar .completed-bar__dashed {
