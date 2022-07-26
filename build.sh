@@ -14,5 +14,6 @@ cp src/helpUI.css app
 cp src/statusBars.css app 
 cp src/bookMarks.css app 
 cp src/msgbox.css app 
+cp src/sifiveProgressBar.css app
 
 ./node_modules/.bin/browserify ./lib/vcdrom.js | ./node_modules/.bin/terser --compress -o app/vcdrom.js
