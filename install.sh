@@ -48,7 +48,7 @@ echo "Copying..."
 cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    killall http-server-relay-linux
+    killall -w http-server-relay-linux || true
     cp http-server-relay-linux ${dev_root_target}/bin
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
