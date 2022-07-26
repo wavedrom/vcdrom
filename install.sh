@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ "$OSTYPE" == "" ]]; then
+    echo "Not supported on this OS"
+    exit 1
+fi 
+
 if [ "_${FS_ROOTDIR}" == "_" ]
 then
     echo "Environment Variable FS_ROOTDIR does not exist"
@@ -49,7 +54,12 @@ cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     killall -w http-server-relay-linux || true
-    cp http-server-relay-linux ${dev_root_target}/bin
+    if [[ $(grep -i Microsoft /proc/version) ]]; then
+        cp http-server-relay-win.exe ${dev_root_target}/bin
+    else
+        cp http-server-relay-linux ${dev_root_target}/bin
+    fi
+    
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     cp http-server-relay-macos ${dev_root_target}/bin
