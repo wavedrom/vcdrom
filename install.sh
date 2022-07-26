@@ -42,12 +42,13 @@ echo "WS: ${workspace}"
 echo "DR: ${dev_root_target}"
 echo "Building..."
 ./build.sh
-/node_modules/.bin/pkg lib/http-server-relay.js
+./node_modules/.bin/pkg lib/http-server-relay.js
 
 echo "Copying..."
 cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    killall http-server-relay-linux
     cp http-server-relay-linux ${dev_root_target}/bin
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
