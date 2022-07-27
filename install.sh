@@ -1,5 +1,14 @@
 #!/bin/bash
 
+doServer=false
+while getopts s flag
+do
+    echo "flag = ${flag}"
+    case "${flag}" in
+        s) doServer=true
+    esac
+done
+
 if [[ "$OSTYPE" == "" ]]; then
     echo "Not supported on this OS"
     exit 1
@@ -12,7 +21,7 @@ then
     exit 1
 fi
 
-if [ ! -d ${FS_ROOTDIR} ]
+if [ ! -d "${FS_ROOTDIR}" ]
 then
     echo "Folder pointed to by FS_ROOTDIR does not exist"
     echo "==> ${FS_ROOTDIR}"
@@ -45,12 +54,22 @@ fi
 
 echo "WS: ${workspace}"
 echo "DR: ${dev_root_target}"
-echo "Building..."
+echo "Building web app..."
 ./build.sh
+
+echo "Installing web app..."
+cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
+
+if [ "${doServer}" == "false" ]
+then
+    echo "Skipping http-server-relay build, use -s to build and install it"
+    exit 0
+fi
+
+echo "Building http-server-relay..."
 ./node_modules/.bin/pkg lib/http-server-relay.js
 
-echo "Copying..."
-cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
+echo "Installing http-server-relay"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     killall -w http-server-relay-linux || true
@@ -62,6 +81,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
+    killall http-server-relay-macos || true
     cp http-server-relay-macos ${dev_root_target}/bin
 else
     # Windows.
