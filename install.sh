@@ -2,17 +2,26 @@
 
 doServer=false
 doParser=false
-doWebapp=true
-while getopts sap flag
+doWebapp=false
+
+# Build vcdom only if no cmd line params are given
+if [ "$#" -eq 0 ]; then
+    doWebapp=true
+fi
+
+while getopts savp flag
 do
     case "${flag}" in
         s) 
             doServer=true ;;
+        v) 
+            doWebapp=true ;;
         p) 
             doParser=true ;;
         a) 
             doServer=true
             doParser=true
+            doWebapp=true
             ;;
     esac
 done
