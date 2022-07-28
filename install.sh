@@ -1,11 +1,19 @@
 #!/bin/bash
 
 doServer=false
-while getopts s flag
+doParser=false
+doWebapp=true
+while getopts sap flag
 do
-    echo "flag = ${flag}"
     case "${flag}" in
-        s) doServer=true
+        s) 
+            doServer=true ;;
+        p) 
+            doParser=true ;;
+        a) 
+            doServer=true
+            doParser=true
+            ;;
     esac
 done
 
@@ -54,36 +62,63 @@ fi
 
 echo "WS: ${workspace}"
 echo "DR: ${dev_root_target}"
-echo "Building web app..."
-./build.sh
 
-echo "Installing web app..."
-cp -r app/* ${workspace} && cp -r app/* ${dev_root_target}/app/
-
-if [ "${doServer}" == "false" ]
+if [ "${doWebapp}" == "true" ]
 then
-    echo "Skipping http-server-relay build, use -s to build and install it"
-    exit 0
+    echo "Building vcdrom web app..."
+    ./build.sh
+
+    echo "Installing web app..."
+    cp -r app/* ${workspace} 
+    cp -r app/* ${dev_root_target}/app/
 fi
 
-echo "Building http-server-relay..."
-./node_modules/.bin/pkg lib/http-server-relay.js
+if [ "${doServer}" == "true" ]
+then
+    echo "Building http-server-relay..."
+    ./node_modules/.bin/pkg lib/http-server-relay.js
 
-echo "Installing http-server-relay"
+    echo "Installing http-server-relay"
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    killall -w http-server-relay-linux || true
-    if [[ $(grep -i Microsoft /proc/version) ]]; then
-        cp http-server-relay-win.exe ${dev_root_target}/bin
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        killall -w http-server-relay-linux || true
+        if [[ $(grep -i Microsoft /proc/version) ]]; then
+            cp http-server-relay-win.exe ${dev_root_target}/bin
+        else
+            cp http-server-relay-linux ${dev_root_target}/bin
+        fi
+        
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+        killall http-server-relay-macos || true
+        cp http-server-relay-macos ${dev_root_target}/bin
     else
-        cp http-server-relay-linux ${dev_root_target}/bin
+        # Windows.
+        echo "Build is not working in Windows yet!"
+        echo "You WSL2 Ubuntu instead."
+        exit 1
     fi
-    
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Mac OSX
-    killall http-server-relay-macos || true
-    cp http-server-relay-macos ${dev_root_target}/bin
-else
-    # Windows.
-    cp http-server-relay-win.exe ${dev_root_target}/bin
+fi
+
+if [ "${doParser}" == "true" ]
+then
+    echo "Building vcdParse..."
+    cd vcdparse
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        # Linux build
+        make clean standalone python
+        echo "Installing vcdParse..."
+        cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+        make clean standalone python
+        echo "Installing vcdParse..."
+        cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
+    else
+        # Windows.
+        echo "Build is not working in Windows yet!"
+        echo "You WSL2 Ubuntu instead."
+        exit 1
+    fi
+    cd ..
 fi
