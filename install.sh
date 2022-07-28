@@ -1,5 +1,51 @@
 #!/bin/bash
 
+# This script will build and install vcdrom, vcdParse, and http-server-relay into a developement 
+# environment.  For Linux and MacOS you can simply run the script as described below.
+#
+# For Windows you need to run this script under WSL2 Ubuntu.  To make this work you need
+# to install the mingw-w64 build environment once:
+#
+# sudo apt install mingw-w64
+#
+# The script will detect that you are in a WSL environment and build the Windows execuables for vcdParse
+#
+# This script require two environment variables be defined:
+#
+# FS_WS is the path to the workspace you are using for the FS AUT (application under test).
+# FS_ROOTDIR is the path the parent folder of your dev-root/SiFive folder.
+#
+# For instance:
+#
+# WSL2 Ubuntu (you can put this in ~/.bashrc):
+#    FS_WS=/mnt/c/eclipse/eclipse-2022.03-rcp/runtime-freedom-studio
+#    FS_ROOTDIR=/mnt/c/dev-root
+#
+# Ubuntu (you can put this in ~/.bashrc):
+#    export FS_WS=/home/kevinm/sifive/ws-multitap
+#    export FS_ROOTDIR=/home/kevinm/dev-root
+#
+# MacOS (you can put this in ~/.zprofile):
+#    export FS_WS=/Users/kevin/fs-dev-x86
+#    export FS_ROOTDIR=/Users/kevin/dev-root
+#
+# The FS_WS path allows the webapp to be installed to AUT workspace and be used without having to 
+# restart Freedom Studio
+#
+# RUNNING THE SCRIPT
+#
+# If you run the script with no parameters only the vcdrom webapp will be built and installed.  
+# This is great if you are working on webapp code and builds faster than doing everything
+#
+# Options to the script:
+#
+#   -v build and install vcdrom
+#   -s build and install http-server-relay
+#   -p build and install vcdparse
+#   -a build and install everything
+
+
+
 doServer=false
 doParser=false
 doWebapp=false
