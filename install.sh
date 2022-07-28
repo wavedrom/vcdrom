@@ -81,10 +81,12 @@ then
     echo "Installing http-server-relay"
 
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        killall -w http-server-relay-linux || true
         if [[ $(grep -i Microsoft /proc/version) ]]; then
+            # WSL Build
             cp http-server-relay-win.exe ${dev_root_target}/bin
         else
+            # Linux build
+            killall -w http-server-relay-linux || true
             cp http-server-relay-linux ${dev_root_target}/bin
         fi
         
@@ -105,10 +107,20 @@ then
     echo "Building vcdParse..."
     cd vcdparse
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        # Linux build
-        make clean standalone python
-        echo "Installing vcdParse..."
-        cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
+        if [[ $(grep -i Microsoft /proc/version) ]]; then
+            # WSL Build
+            echo "!!!"
+            echo "!!! VCDPARSE: Waiting for CROSS build support to do Windows..."
+            echo "!!!"
+            # CROSS=i686-w64-mingw32- make clean standalone
+            # echo "Installing vcdParse..."
+            # cp vcdParse.exe ${dev_root_target}/bin
+        else
+            # Linux build
+            make clean standalone python
+            echo "Installing vcdParse..."
+            cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
+        fi
     elif [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
         make clean standalone python
