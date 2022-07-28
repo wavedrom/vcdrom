@@ -1,0 +1,150 @@
+/* timed message box */
+#messageBox {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 30px; /* to ensure the text is centered*/
+  position: absolute;
+  background-color: rgb(262, 63, 78);
+  opacity: 0.9;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 50px; /* to ensure the text is centered*/
+  color: rgb(229, 229, 229);
+  border-radius: 48px;
+  border: 2px rgb(262, 63, 78);
+}
+
+/* button message */
+.outer-box {
+  display: block;
+  text-align: center;
+}
+/* ------ */
+/* X close message box */
+#messageBox1 {
+  position: absolute;
+  display: inline-block;
+  /* display: none */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 30px; /* to ensure the text is centered*/
+  position: absolute;
+  background-color: rgb(262, 63, 78);
+  opacity: 0.9;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 50px; /* to ensure the text is centered*/
+  color: rgb(229, 229, 229);
+  border-radius: 48px;
+  border: 2px rgb(262, 63, 78);
+}
+
+/* button message */
+.outer-box1 {
+  display: block;
+  text-align: center;
+}
+#close {
+  display: inline-block;
+  position: absolute;
+  left: 90%;
+  bottom: 20%;
+  transition: all 0.2s ease-in-out;
+}
+#close:hover {
+  color: #fff;
+  transform: scale(1.5);
+}
+
+/* .DialogueBox */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.confirm {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-width: 280px;
+  max-width: 500px;
+  height: auto;
+  background-color: rgb(262, 63, 78);
+  border-radius: 48px;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid white;
+  animation: fade 1s ease 1 forwards;
+}
+.confirm h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1.5rem 1rem 0.5rem;
+}
+.confirm p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 2rem 4.5rem;
+}
+.confirm button {
+  background: transparent;
+  border: none;
+  color: white;
+  height: 3rem;
+  font-size: 1rem;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+.confirm button:nth-of-type(1) {
+  border-top: 2px solid #b4b4b4;
+  border-right: 2px solid #b4b4b4;
+  left: 0;
+  border-radius: 0 0 0 48px;
+}
+.confirm button:nth-of-type(2) {
+  border-top: 2px solid #b4b4b4;
+  right: 0;
+  border-radius: 0 0 48px 0;
+}
+
+.confirm button:nth-of-type(1):hover {
+  background: #ee989f;
+}
+
+.confirm button:nth-of-type(2):hover {
+  background: #1ebf61;
+}
+
+.confirm button:focus,
+.confirm button:hover {
+  font-weight: bold;
+  transform: scale(1.001);
+  background: rgb(262, 63, 78);
+}
+.confirm button:active {
+  background: #279f2b;
+}

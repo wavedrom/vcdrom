@@ -1,0 +1,82 @@
+.wd-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.progress-container {
+  justify-content: center;
+  margin-top: 120px;
+  filter: drop-shadow(5px 5px 10px #ff3f12);
+}
+.progress-decoration {
+  position: relative;
+  height: 16vh;
+}
+.progress-decoration svg {
+  position: absolute;
+  fill: rgba(237, 30, 40, 0.2);
+}
+
+.progress-bar {
+  background-color: transparent;
+  border: 3px #f4f4f4 solid;
+  border-radius: 20px;
+  position: relative;
+  margin: 4px 0 16px 0;
+  height: 50px;
+  display: inline-block;
+  width: 99% !important;
+}
+
+.progress-bar .completed-bar {
+  background: linear-gradient(to left, #ff3f4e, #e77f68);
+  background: g;
+  border-radius: 20px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 98%;
+  padding: 0 8px;
+}
+.progress-bar .completed-bar__dashed {
+  width: 95%;
+  border: 1px dashed #fff;
+}
+.progress-information {
+  display: none;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+@media only screen and (max-width: 576px) {
+  .progress-container {
+    padding: 0px 16px;
+  }
+  .progress-decoration {
+    display: none;
+  }
+  .progress-information {
+    display: flex;
+  }
+  .progress-bar {
+    margin-bottom: 4px;
+  }
+  .progress-bar .completed-bar__dashed {
+    width: 94%;
+    border: 1px dashed #fff;
+  }
+}
+.sifiveLogo {
+  transition: ease-in-out 1s;
+}
+.sifiveLogo:hover {
+  transform: scale(1.3);
+}
+
+#sifiveLogoimg {
+  opacity: 0;
+}

@@ -1,7 +1,5 @@
 {
-  "cSpell.words": [
-    "Sifive"
-  ],
+  "cSpell.words": ["Dsize", "Logoimg", "Sifive", "xlink", "Xmsg"],
   "prettier.enable": true,
   "editor.formatOnSave": true
 }

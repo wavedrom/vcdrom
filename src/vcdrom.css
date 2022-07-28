@@ -302,6 +302,7 @@ tspan.pc-asm {
 }
 rect.pc-odd {
   fill: #222;
+  opacity: 0.5;
 }
 rect.pc-even {
   fill: #444;
