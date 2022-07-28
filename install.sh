@@ -109,12 +109,9 @@ then
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         if [[ $(grep -i Microsoft /proc/version) ]]; then
             # WSL Build
-            echo "!!!"
-            echo "!!! VCDPARSE: Waiting for CROSS build support to do Windows..."
-            echo "!!!"
-            # CROSS=i686-w64-mingw32- make clean standalone
-            # echo "Installing vcdParse..."
-            # cp vcdParse.exe ${dev_root_target}/bin
+            CROSS=i686-w64-mingw32- make clean standalone
+            echo "Installing vcdParse..."
+            cp vcdParse.exe ${dev_root_target}/bin
         else
             # Linux build
             make clean standalone python
