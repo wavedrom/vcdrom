@@ -1,0 +1,3 @@
+[submodule "vcdparse"]
+	path = vcdparse
+	url = git@github.com:sifive/vcdparse.git
