@@ -1,4 +1,16 @@
 
+.CodeMirror {
+  border-style: solid;
+  border-width: 1px 4px 1px 4px;
+  border-color: hsla(242, 100%, 50%, 0.01);
+}
+
+.CodeMirror-focused {
+  border-style: solid;
+  border-width: 1px 4px 1px 4px;
+  border-color: hsla(242, 100%, 50%, 0.7);
+}
+
 .CodeMirror-hints {
   position: absolute;
   z-index: 10;
@@ -180,7 +192,7 @@ text.zxviolet {
   font-size: 16px;
   top: 20px;
   bottom: 20px;
-  width: 320px;
+  width: 640px;
   background: #0000002c;
 }
 
@@ -193,7 +205,7 @@ text.zxviolet {
   bottom: 20px;
   height: calc(100% - 40px);
   left: 0px;
-  width: 320px;
+  width: 640px;
   background: #0000002c;
 }
 
@@ -224,6 +236,9 @@ rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7) }
 rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
 rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
 rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
+
+rect.pc0 { fill: none; stroke-width: 4px; stroke: hsl(30, 100%, 74%)}
+rect.pc1 { fill: none; stroke-width: 4px; stroke: hsl(211, 100%, 74%)}
 
 .event0 { fill: hsla(0, 0%, 100%, 0.3); }
 .event1 { fill: hsl(101, 100%, 50%); }
