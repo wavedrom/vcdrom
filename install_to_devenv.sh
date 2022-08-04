@@ -47,7 +47,6 @@
 
 
 doServer=false
-doParser=false
 doWebapp=false
 
 # Build vcdom only if no cmd line params are given
@@ -62,11 +61,8 @@ do
             doServer=true ;;
         v) 
             doWebapp=true ;;
-        p) 
-            doParser=true ;;
         a) 
             doServer=true
-            doParser=true
             doWebapp=true
             ;;
     esac
@@ -115,9 +111,6 @@ then
     exit 1
 fi
 
-echo "WS: ${workspace}"
-echo "DR: ${dev_root_target}"
-
 if [ "${doWebapp}" == "true" ]
 then
     echo "Building vcdrom web app..."
@@ -157,33 +150,7 @@ then
     fi
 fi
 
-if [ "${doParser}" == "true" ]
-then
-    echo "Building vcdParse..."
-    cd vcdparse
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        if [[ $(grep -i Microsoft /proc/version) ]]; then
-            # WSL Build
-            CROSS=i686-w64-mingw32- make clean standalone
-            echo "Installing vcdParse..."
-            cp vcdParse.exe ${dev_root_target}/bin
-        else
-            # Linux build
-            make clean standalone python
-            echo "Installing vcdParse..."
-            cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
-        fi
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-        # Mac OSX
-        make clean standalone python
-        echo "Installing vcdParse..."
-        cp vcdParse vcdParser.py _vcdParser.so ${dev_root_target}/bin
-    else
-        # Windows.
-        echo "Build is not working in Windows yet!"
-        echo "You WSL2 Ubuntu instead."
-        exit 1
-    fi
-    cd ..
-fi
+echo "Installed to: ${workspace}"
+echo "Installed to: ${dev_root_target}"
+
 

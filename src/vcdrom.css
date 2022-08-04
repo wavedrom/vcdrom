@@ -308,30 +308,22 @@ rect.pc-even {
   fill: #444;
 }
 
-rect.s0_pc {
+rect.f0_pc {
   fill: hsla(0, 100%, 70%, 0.5);
-  rx: 8;
-  ry: 8;
 }
-rect.s1_pc {
+rect.f1_pc {
   fill: hsla(45, 100%, 70%, 0.5);
-  rx: 8;
-  ry: 8;
 }
-rect.s2_pc {
+rect.f2_pc {
   fill: hsla(90, 100%, 70%, 0.5);
-  rx: 8;
-  ry: 8;
 }
-rect.s3_pc {
+rect.id_pc {
   fill: hsla(135, 100%, 70%, 0.5);
-  rx: 8;
-  ry: 8;
 }
-rect.exa_pc {
+rect.aga_pc {
   fill: hsla(180, 100%, 30%, 0.7);
 }
-rect.exb_pc {
+rect.agb_pc {
   fill: hsla(180, 100%, 50%, 0.3);
 }
 rect.m1a_pc {
@@ -351,6 +343,17 @@ rect.wba_pc {
 }
 rect.wbb_pc {
   fill: hsla(315, 100%, 50%, 0.3);
+}
+
+rect.pc0 {
+  fill: none;
+  stroke-width: 4px;
+  stroke: hsl(30, 100%, 74%);
+}
+rect.pc1 {
+  fill: none;
+  stroke-width: 4px;
+  stroke: hsl(211, 100%, 74%);
 }
 
 .event0 {
