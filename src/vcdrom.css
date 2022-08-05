@@ -263,7 +263,7 @@ text.zxviolet {
   font-size: 16px;
   top: 20px;
   bottom: 20px;
-  width: 320px;
+  width: 360px;
   background: #0000002c;
 }
 
@@ -276,7 +276,7 @@ text.zxviolet {
   bottom: 20px;
   height: calc(100% - 40px);
   left: 0px;
-  width: 320px;
+  width: 360px;
   background: #0000002c;
 }
 
