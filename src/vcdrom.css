@@ -107,6 +107,7 @@ body {
   position: absolute;
   top: 0px;
   z-index: 1;
+  pointer-events: none;
 }
 
 line.wd-cursor-line {
@@ -285,8 +286,14 @@ rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
 
 rect.vec_pc { fill: hsl(187, 100%, 50%); } */
 
-rect.pc0 { fill: none; stroke-width: 4px; stroke: hsl(30, 100%, 74%)}
-rect.pc1 { fill: none; stroke-width: 4px; stroke: hsl(211, 100%, 74%)}
+rect.pc0 { fill: none; stroke-width: 4px; stroke: hsl(30, 100%, 75%)}
+rect.pc1 { fill: none; stroke-width: 4px; stroke: hsl(165, 100%, 75%)}
+rect.pc2 { fill: none; stroke-width: 4px; stroke: hsl(300, 100%, 75%)}
+rect.pc3 { fill: none; stroke-width: 4px; stroke: hsl(75, 100%, 75%)}
+rect.pc4 { fill: none; stroke-width: 4px; stroke: hsl(210, 100%, 75%)}
+rect.pc5 { fill: none; stroke-width: 4px; stroke: hsl(345, 100%, 75%)}
+rect.pc6 { fill: none; stroke-width: 4px; stroke: hsl(120, 100%, 75%)}
+rect.pc7 { fill: none; stroke-width: 4px; stroke: hsl(255, 100%, 75%)}
 
 .event0 { fill: hsla(0, 0%, 100%, 0.3); }
 .event1 { fill: hsl(101, 100%, 50%); }
