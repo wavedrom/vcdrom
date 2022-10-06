@@ -13,7 +13,7 @@ Using:
 
 ## App page
 
-https://drom.io/vcd
+https://vc.drom.io
 
 ## from NPM
 
