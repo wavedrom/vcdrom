@@ -29,7 +29,7 @@
   "homepage": "https://github.com/wavedrom/vcdrom#readme",
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
-    "@wavedrom/doppler": "^0.13.0",
+    "@wavedrom/doppler": "^0.14.0",
     "browserify": "^17.0.0",
     "codemirror": "^5.65.1",
     "eslint": "^8.15.0",
