@@ -1,4 +1,16 @@
 
+.CodeMirror {
+  border-style: solid;
+  border-width: 1px 4px 1px 4px;
+  border-color: hsla(242, 100%, 50%, 0.01);
+}
+
+.CodeMirror-focused {
+  border-style: solid;
+  border-width: 1px 4px 1px 4px;
+  border-color: hsla(242, 100%, 50%, 0.7);
+}
+
 .CodeMirror-hints {
   position: absolute;
   z-index: 10;
@@ -95,6 +107,7 @@ body {
   position: absolute;
   top: 0px;
   z-index: 1;
+  pointer-events: none;
 }
 
 line.wd-cursor-line {
@@ -180,7 +193,7 @@ text.zxviolet {
   font-size: 16px;
   top: 20px;
   bottom: 20px;
-  width: 320px;
+  width: 640px;
   background: #0000002c;
 }
 
@@ -193,7 +206,7 @@ text.zxviolet {
   bottom: 20px;
   height: calc(100% - 40px);
   left: 0px;
-  width: 320px;
+  width: 640px;
   background: #0000002c;
 }
 
@@ -212,18 +225,80 @@ tspan.pc-asm    { fill: hsl(0 0% 100%); }
 rect.pc-odd    { fill: #222; }
 rect.pc-even   { fill: #444; }
 
-rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5); rx: 8; ry: 8; }
-rect.s3_pc  { fill: hsla(135, 100%, 70%, 0.5); rx: 8; ry: 8; }
+rect.ct0 { fill: hsla(  0, 100%, 50%, 0.5); }
+rect.ct1 { fill: hsla( 10, 100%, 50%, 0.5); }
+rect.ct2 { fill: hsla( 20, 100%, 50%, 0.5); }
+rect.ct3 { fill: hsla( 35, 100%, 50%, 0.5); }
+rect.ct4 { fill: hsla( 40, 100%, 50%, 0.5); }
+rect.ct5 { fill: hsla( 50, 100%, 50%, 0.5); }
+rect.ct6 { fill: hsla( 60, 100%, 50%, 0.5); }
+rect.ct7 { fill: hsla( 70, 100%, 50%, 0.5); }
+rect.ct8 { fill: hsla( 80, 100%, 50%, 0.5); }
+rect.ct9 { fill: hsla( 90, 100%, 50%, 0.5); }
+rect.cta { fill: hsla(100, 100%, 50%, 0.5); }
+rect.ctb { fill: hsla(110, 100%, 50%, 0.5); }
+rect.ctc { fill: hsla(120, 100%, 50%, 0.5); }
+rect.ctd { fill: hsla(130, 100%, 50%, 0.5); }
+rect.cte { fill: hsla(140, 100%, 50%, 0.5); }
+rect.ctf { fill: hsla(150, 100%, 50%, 0.5); }
+rect.ctg { fill: hsla(160, 100%, 50%, 0.5); }
+rect.cth { fill: hsla(170, 100%, 50%, 0.5); }
+rect.cti { fill: hsla(180, 100%, 50%, 0.5); }
+rect.ctj { fill: hsla(190, 100%, 50%, 0.5); }
+rect.ctk { fill: hsla(200, 100%, 50%, 0.5); }
+rect.ctl { fill: hsla(210, 100%, 50%, 0.5); }
+rect.ctm { fill: hsla(220, 100%, 50%, 0.5); }
+rect.ctn { fill: hsla(230, 100%, 50%, 0.5); }
+rect.cto { fill: hsla(240, 100%, 50%, 0.5); }
+rect.ctp { fill: hsla(250, 100%, 50%, 0.5); }
+rect.ctq { fill: hsla(260, 100%, 50%, 0.5); }
+rect.ctr { fill: hsla(370, 100%, 50%, 0.5); }
+rect.cts { fill: hsla(380, 100%, 50%, 0.5); }
+rect.ctt { fill: hsla(390, 100%, 50%, 0.5); }
+rect.ctu { fill: hsla(300, 100%, 50%, 0.5); }
+rect.ctv { fill: hsla(310, 100%, 50%, 0.5); }
+rect.ctw { fill: hsla(320, 100%, 50%, 0.5); }
+rect.ctx { fill: hsla(330, 100%, 50%, 0.5); }
+rect.cty { fill: hsla(340, 100%, 50%, 0.5); }
+rect.ctz { fill: hsla(350, 100%, 50%, 0.5); }
+
+
+/* rect.s0_pc  { fill: hsla(0, 100%, 70%, 0.5);   }
+rect.s1_pc  { fill: hsla(45, 100%, 70%, 0.5);  }
+rect.s2_pc  { fill: hsla(90, 100%, 70%, 0.5);  }
+rect.s3_pc  { fill: hsla(135, 100%, 70%, 0.5); }
+
+rect.f0_pc  { fill: hsla(0, 100%, 70%, 0.5);   }
+rect.f1_pc  { fill: hsla(45, 100%, 70%, 0.5);  }
+rect.f2_pc  { fill: hsla(90, 100%, 70%, 0.5);  }
+rect.id_pc  { fill: hsla(135, 100%, 70%, 0.5); }
+
+rect.aga_pc { fill: hsla(180, 100%, 30%, 0.7); }
+rect.agb_pc { fill: hsla(180, 100%, 50%, 0.3); }
 rect.exa_pc { fill: hsla(180, 100%, 30%, 0.7); }
 rect.exb_pc { fill: hsla(180, 100%, 50%, 0.3); }
 rect.m1a_pc { fill: hsla(225, 100%, 30%, 0.7); }
 rect.m1b_pc { fill: hsla(225, 100%, 50%, 0.3); }
-rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7) }
+rect.m2a_pc { fill: hsla(270, 100%, 30%, 0.7)  }
 rect.m2b_pc { fill: hsla(270, 100%, 50%, 0.3); }
 rect.wba_pc { fill: hsla(315, 100%, 30%, 0.7); }
 rect.wbb_pc { fill: hsla(315, 100%, 50%, 0.3); }
+
+rect.vec_pc { fill: hsl(187, 100%, 50%); } */
+
+rect.pc0 { fill: none; stroke-width: 4px; stroke: hsl(30, 100%, 75%)}
+rect.pc1 { fill: none; stroke-width: 4px; stroke: hsl(165, 100%, 75%)}
+rect.pc2 { fill: none; stroke-width: 4px; stroke: hsl(300, 100%, 75%)}
+rect.pc3 { fill: none; stroke-width: 4px; stroke: hsl(75, 100%, 75%)}
+rect.pc4 { fill: none; stroke-width: 4px; stroke: hsl(210, 100%, 75%)}
+rect.pc5 { fill: none; stroke-width: 4px; stroke: hsl(345, 100%, 75%)}
+rect.pc6 { fill: none; stroke-width: 4px; stroke: hsl(120, 100%, 75%)}
+rect.pc7 { fill: none; stroke-width: 4px; stroke: hsl(255, 100%, 75%)}
+
+.event0 { fill: hsla(0, 0%, 100%, 0.3); }
+.event1 { fill: hsl(101, 100%, 50%); }
+.event2 { fill: hsl(57, 100%, 50%); }
+.event3 { fill: hsl(32, 100%, 50%); }
 
 line.gap { stroke: #fff; stroke-dasharray: 4 3; }
 
