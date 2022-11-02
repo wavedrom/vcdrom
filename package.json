@@ -1,6 +1,6 @@
 {
   "name": "vcdrom",
-  "version": "0.12.0",
+  "version": "1.0.0",
   "description": "Standalone VCD viewer PWA application",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "terser": "^5.15.0",
     "vcd-stream": "^1.3.0",
     "watchify": "^4.0.0",
-    "waveql": "^0.4.1"
+    "waveql": "^1.0.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",

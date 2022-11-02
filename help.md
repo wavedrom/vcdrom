@@ -4,14 +4,17 @@
 
 | Action | Description |
 |-|-|
-| <kbd>←</kbd> and <kbd>→</kbd> | scroll along the timeline ±10% |
-| <kbd>+</kbd> or <kbd>=</kbd> | time zoom in (around the cursor) |
-| <kbd>-</kbd> or <kbd>_</kbd> | time zoom out (around the cursor) |
-| <kbd>f</kbd> or <kbd>F</kbd> | time zoom full  |
-| <kbd>Home</kbd> | scroll to the beginning of times |
-| <kbd>End</kbd> | scroll to the end of times |
-| <kbd>↑</kbd> and <kbd>↓</kbd> | scroll signal list ±10%  |
-| <kbd>PageUp</kbd> and <kbd>PageDown</kbd> | scroll signal list ±75%  |
+| <kbd>Alt</kbd> <kbd>0</kbd> | time zoom full 100% |
+| <kbd>Alt</kbd> <kbd>-</kbd> | time zoom out (around the cursor) |
+| <kbd>Alt</kbd> <kbd>+</kbd> | time zoom in (around the cursor) |
+|||
+| <kbd>Alt</kbd> <kbd>,</kbd> | scroll to the past |
+| <kbd>Alt</kbd> <kbd>.</kbd> | scroll to the future |
+|||
+| <kbd>Alt</kbd> <kbd>[</kbd> | scroll to the beginning of times |
+| <kbd>Alt</kbd> <kbd>]</kbd> | scroll to the end of times |
+|||
+| <kbd>Alt</kbd> <kbd>/</kbd> | toggle read-only mode |
 
 ### Mouse actions
 
