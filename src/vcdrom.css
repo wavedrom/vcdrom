@@ -23,8 +23,10 @@
 }
 
 body {
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+  overflow: hidden;
+  /* overflow: auto; */
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -35,11 +37,49 @@ body {
   height: 100%;
 }
 
+.wd-container {
+  /* background-color: #1c1c1c; */
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+  /* overflow: hidden; */
+  /* overflow: auto; */
+  height: 100%;
+  cursor: col-resize;
+}
+
+.wd-grid {
+  position: absolute;
+}
+
+.wd-view {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+}
+
+.wd-values {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+}
+
+.wd-waveql {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  width: 100%;
+}
+
 .wd-cursor {
   position: absolute;
-  top: 0px;
-  z-index: 1;
+  /* z-index: 1; */
   pointer-events: none;
+}
+
+.wd-menu {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
 }
 
 line.wd-cursor-line {
@@ -59,11 +99,6 @@ rect.wd-cursor-time {
   fill: #222;
 }
 
-.wd-values {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
 
 .wd-values text {
   font-size: 14px;
@@ -81,12 +116,6 @@ text.wd-grid-time {
   fill: hsla(49, 100%, 50%, 0.7);
 }
 
-.wd-view {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-  bottom: 20px;
-}
 
 
 text.xred {
@@ -103,12 +132,6 @@ text.zxviolet {
   z-index: 2;
 } */
 
-.wd-container {
-  /* background-color: #1c1c1c; */
-  /* overflow: hidden; */
-  height: 100%;
-  cursor: col-resize;
-}
 
 .wd-progress {
   position: absolute;
