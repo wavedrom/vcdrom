@@ -15,8 +15,6 @@ fi
 
 mkdir -p app
 
-cp node_modules/codemirror/lib/codemirror.css app
-
 cp node_modules/vcd-stream/out/vcd.wasm app
 
 cp src/vcdrom.html app/index.html
