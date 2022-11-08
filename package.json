@@ -42,7 +42,8 @@
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
     "env": {
-      "es2020": true
+      "es2020": true,
+      "browser": true
     },
     "parserOptions": {
       "ecmaVersion": 2020
