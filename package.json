@@ -48,5 +48,9 @@
     "parserOptions": {
       "ecmaVersion": 2020
     }
+  },
+  "prettier": {
+    "trailingComma" : "none",
+    "singleQuote": true
   }
 }
