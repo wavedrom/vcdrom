@@ -11,6 +11,9 @@ done
 
 if [ ! -d "node_modules" ]; then
     npm i
+    pushd ../doppler
+    npm i
+    popd
 fi
 
 mkdir -p app
