@@ -1,0 +1,17 @@
+diff --git a/node_modules/onml/stringify.js b/node_modules/onml/stringify.js
+index bb7855d..455d519 100644
+--- a/node_modules/onml/stringify.js
++++ b/node_modules/onml/stringify.js
+@@ -52,7 +52,11 @@ function stringify (a, indentation) {
+             if (Array.isArray(val)) {
+               val = val.join(' ');
+             }
+-            res += ' ' + key + '="' + val + '"';
++            var xKey = key;
++            if (key.startsWith('data')) {
++              xKey = 'data-'+key.substring(4);
++            }
++            res += ' ' + xKey + '="' + val + '"';
+           });
+           if (arr.length === 2) {
+             return true;
