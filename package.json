@@ -6,8 +6,8 @@
   "scripts": {
     "test": "eslint lib",
     "browserify": "browserify ./lib/vcdrom.js > app/vcdrom.js",
-    "build": "browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js",
-    "watch": "watchify ./lib/vcdrom.js -o app/vcdrom.js -v",
+    "build": "cd ../.. && ./build.sh -i -d drom",
+    "watch": "nodemon --exec npm run build --watch lib --watch ../doppler/lib",
     "postinstall": "npx patch-package"
   },
   "files": [
@@ -38,7 +38,8 @@
     "terser": "^5.15.0",
     "vcd-stream": "^1.3.0",
     "watchify": "^4.0.0",
-    "waveql": "^1.1.0"
+    "waveql": "^1.1.0",
+    "nodemon": "^2.0.20"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",

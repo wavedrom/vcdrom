@@ -9,10 +9,15 @@ do
     esac
 done
 
-npm i
-pushd ../doppler
-npm i
-popd
+if ! [ -d node_modules ]; then
+    npm i
+fi
+
+if ! [ -d ../doppler/node_modules ]; then
+    pushd ../doppler
+    npm i
+    popd
+fi
 
 mkdir -p app
 
