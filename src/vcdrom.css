@@ -95,6 +95,16 @@ text.wd-cursor-time {
   z-index: 1;
 }
 
+line.wd-vline {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.wd-vline {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
 rect.wd-cursor-time {
   fill: #222;
 }
