@@ -7,8 +7,7 @@
     "test": "eslint lib",
     "browserify": "browserify ./lib/vcdrom.js > app/vcdrom.js",
     "build": "cd ../.. && ./build.sh -i -d drom",
-    "watch": "nodemon --exec npm run build --watch lib --watch ../doppler/lib",
-    "postinstall": "npx patch-package"
+    "watch": "nodemon --exec npm run build --watch lib --watch ../doppler/lib"
   },
   "files": [
     "app/*.html",
