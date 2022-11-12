@@ -32,7 +32,7 @@ cp src/*.woff2 app
 if [ "${debug}" == "true" ]
 then
     # When debugging don't tersify and do generate source maps.
-    ./node_modules/.bin/browserify -d ./lib/vcdrom.js >app/vcdrom.js
+    ./node_modules/.bin/browserify -d ./lib/pv2.js >app/vcdrom.js
 else
     ./node_modules/.bin/browserify ./lib/vcdrom.js | ./node_modules/.bin/terser --compress -o app/vcdrom.js
 fi
