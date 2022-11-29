@@ -1,6 +1,6 @@
 {
   "name": "vcdrom",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Standalone VCD viewer PWA application",
   "main": "index.js",
   "scripts": {
