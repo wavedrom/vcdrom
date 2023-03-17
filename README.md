@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.svg"/></p>
+
 [![NPM version](https://img.shields.io/npm/v/vcdrom.svg)](https://www.npmjs.org/package/vcdrom)
 [![Linux](https://github.com/wavedrom/vcdrom/actions/workflows/linux.yml/badge.svg)](https://github.com/wavedrom/vcdrom/actions/workflows/linux.yml)
 [![MacOS](https://github.com/wavedrom/vcdrom/actions/workflows/macos.yml/badge.svg)](https://github.com/wavedrom/vcdrom/actions/workflows/macos.yml)
