@@ -29,16 +29,16 @@
   "homepage": "https://github.com/wavedrom/vcdrom#readme",
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
-    "@wavedrom/doppler": "^1.6.0",
+    "@wavedrom/doppler": "^1.7.0",
     "browserify": "^17.0.0",
-    "eslint": "^8.36.0",
+    "eslint": "^8.37.0",
     "http-server": "^14.1.0",
     "onml": "^2.1.0",
-    "style-mod": "^4.0.0",
-    "terser": "^5.16.6",
+    "style-mod": "^4.0.2",
+    "terser": "^5.16.8",
     "vcd-stream": "^1.4.0",
     "watchify": "^4.0.0",
-    "waveql": "^1.5.0"
+    "waveql": "^1.6.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node8",
