@@ -1,6 +1,6 @@
 {
   "name": "vcdrom",
-  "version": "1.5.0",
+  "version": "1.8.0",
   "description": "Standalone VCD viewer PWA application",
   "main": "index.js",
   "scripts": {
@@ -29,16 +29,16 @@
   "homepage": "https://github.com/wavedrom/vcdrom#readme",
   "devDependencies": {
     "@drom/eslint-config": "^0.12.0",
-    "@wavedrom/doppler": "^1.8.1",
+    "@wavedrom/doppler": "^1.11.0",
     "browserify": "^17.0.0",
-    "eslint": "^8.44.0",
+    "eslint": "^8.56.0",
     "http-server": "^14.1.0",
     "onml": "^2.1.0",
-    "style-mod": "^4.0.3",
-    "terser": "^5.18.2",
-    "vcd-stream": "^1.4.0",
+    "style-mod": "^4.1.0",
+    "terser": "^5.27.0",
+    "vcd-stream": "^1.5.0",
     "watchify": "^4.0.0",
-    "waveql": "^1.6.0"
+    "waveql": "^1.8.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint8/node12"
