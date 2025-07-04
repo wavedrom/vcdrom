@@ -3,7 +3,42 @@
     <meta charset="UTF-8">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 fill=%22grey%22 font-size=%2290%22>🌊</text></svg>">
     <title>VCDrom</title>
-    <link rel="preload" as="font" href="iosevka-term-light.woff2" type="font/woff2" crossorigin>
+    <style>
+      @font-face {
+        font-family: 'Iosevka Drom Web';
+        font-display: swap;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        src: url('./IosevkaDrom-Regular.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: 'Iosevka Drom Web';
+        font-display: swap;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: oblique;
+        src: url('./IosevkaDrom-Oblique.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: 'Iosevka Drom Web Oblique';
+        font-display: swap;
+        font-weight: 400;
+        font-stretch: normal;
+        src: url('./IosevkaDrom-Oblique.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: 'Iosevka Drom Web';
+        font-display: swap;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: italic;
+        src: url('./IosevkaDrom-Italic.woff2') format('woff2');
+      }
+    </style>
     <script src="vcdrom.js"></script>
   </head>
   <body onload="VCDrom('waveform1')">
