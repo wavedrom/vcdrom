@@ -6,7 +6,7 @@
   "scripts": {
     "test": "eslint lib",
     "browserify": "browserify ./lib/vcdrom.js > app/vcdrom.js",
-    "build": "browserify ./lib/vcdrom.js | terser --compress -o app/vcdrom.js",
+    "build": "node build.js -v",
     "watch": "watchify ./lib/vcdrom.js -o app/vcdrom.js -v"
   },
   "files": [
@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/wavedrom/vcdrom#readme",
   "devDependencies": {
-    "@drom/eslint-config": "^0.12.0",
+    "@drom/eslint-config": "^0.13.0",
     "@wavedrom/doppler": "^1.13.0",
     "browserify": "^17.0.1",
+    "chokidar": "^4.0.3",
     "eslint": "^8.57.1",
-    "http-server": "^14.1.0",
     "onml": "^2.1.0",
     "style-mod": "^4.1.0",
     "terser": "^5.36.0",
-    "vcd-stream": "^1.5.0",
+    "vcd2": "0.5.0",
     "watchify": "^4.0.0",
     "waveql": "^1.8.0"
   },
   "eslintConfig": {
-    "extends": "@drom/eslint-config/eslint8/node12"
+    "extends": "@drom/eslint-config/eslint8/node22"
   }
 }
