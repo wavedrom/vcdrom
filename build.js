@@ -25,14 +25,14 @@ const runBrowserify = (files) => new Promise((resolve /* , reject */) => {
 const writeFileExtra = (opts) => async (fname, fbody) => {
   await fs.promises.writeFile(fname, fbody);
   if (opts.verbose) {
-    console.log(fname, fbody.length);
+    console.log(fname, fbody.length); // eslint-disable-line no-console
   }
   return fbody;
 };
 
 const run = async (opts) => {
   if (opts.verbose) {
-    console.log('run');
+    console.log('run'); // eslint-disable-line no-console
   }
 
   const wfe = writeFileExtra(opts);
@@ -81,5 +81,3 @@ const build = async () => {
 };
 
 build();
-
-/* eslint no-console: 0 */
