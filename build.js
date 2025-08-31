@@ -25,18 +25,18 @@ const runBrowserify = (files) => new Promise((resolve /* , reject */) => {
 const writeFileExtra = (opts) => async (fname, fbody) => {
   await fs.promises.writeFile(fname, fbody);
   if (opts.verbose) {
-    console.log(fname, fbody.length); // eslint-disable-line no-console
+    console.log(' ', path.basename(fname), fbody.length); // eslint-disable-line no-console
   }
   return fbody;
 };
 
 const run = async (opts) => {
-  if (opts.verbose) {
-    console.log('run'); // eslint-disable-line no-console
-  }
 
   const wfe = writeFileExtra(opts);
 
+  if (opts.verbose) {
+    console.log(''); // eslint-disable-line no-console
+  }
   const workerCode = await wfe('./vcdrom-worker.js',
     await runBrowserify('./lib/vcdrom-worker.js'));
 
@@ -51,6 +51,9 @@ const run = async (opts) => {
 
   await wfe('./vcdrom.min.js',
     (await terser.minify(mainCode, {compress: {}})).code);
+  if (opts.verbose) {
+    console.log('--------------------------------'); // eslint-disable-line no-console
+  }
 };
 
 const build = async () => {
@@ -66,7 +69,7 @@ const build = async () => {
   await run(opts);
 
   if (opts.watch) {
-    const fullWatchPoints = ['./lib/', './build.js'].map(p => path.resolve(p));
+    const fullWatchPoints = ['./lib/'].map(p => path.resolve(p));
     const watcher = chokidar.watch(fullWatchPoints, {
       ignored: /(^|[/\\])\../, // ignore dotfiles
       persistent: true
